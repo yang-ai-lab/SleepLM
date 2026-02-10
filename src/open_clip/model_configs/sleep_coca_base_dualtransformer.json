@@ -1,0 +1,44 @@
+{
+    "embed_dim": 512,
+    "multimodal_cfg": {
+        "width": 768,
+        "context_length": 256,
+        "mlp_ratio": 4,
+        "layers": 12,
+        "heads": 12
+    },
+    "biosignals_cfg": {
+        "architecture": "pure_transformer",
+        "input_channels": 10,
+        "signal_length": 1920,
+        "sampling_rate": 64,
+        "patch_size": 16,
+        "conv_embed_dim": 256,
+        "num_temporal_layers": 1,
+        "activation": "swiglu",
+        "norm_type": "rmsnorm",
+        "mlp_bias": false,
+        "share_channel_rope": true,
+        "transformer_layers": 3,
+        "transformer_width": 768,
+        "transformer_heads": 12,
+        "mlp_ratio": 3.0,
+        "pool_type": "attn",
+        "dropout": 0.1,
+        "decoder_tokens": 32
+    },
+    "text_cfg": {
+        "context_length": 256,
+        "vocab_size": 49408,
+        "layers": 12,
+        "heads": 12, 
+        "width": 768,
+        "embed_cls": true,
+        "output_tokens": true
+    },
+    "custom_text": true,
+    "prefix_len": 1,
+    "num_caption_channels": 12,
+    "decoder_type": "cross_attention"
+}
+

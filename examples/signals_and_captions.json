@@ -1,0 +1,42 @@
+[
+  {
+    "sample_idx": 3,
+    "gt": {
+      "stage_event": "Sleep stage analysis shows Wake for this epoch. A Arousal event occurs from 0.0 to 9.8 seconds.",
+      "brain": "Left EOG Movement: slow eye movement relative power of 20.58%, and also REM saccadic relative power at 57.04%. Right EOG Movement: a slow eye movement relative power equal to 17.11%, together with a REM saccadic relative power at about 56%. Central EEG Activity (C3-A2): delta relative power measuring 48.49%, along with a theta relative power measuring 24.24%, together with alpha relative power of roughly 18%, plus a beta relative power measuring 4.81%. Central EEG Activity (C4-A1): a delta relative power equal to 39.14%, theta relative power measuring 28.17%, accompanied by a alpha relative power measuring 21.85%, along with beta relative power measuring around 6%.",
+      "heart": "Electrocardiogram: estimated beat rate at 32.3 bpm. Heart Rate: a minimum value valued at about 60, plus maximum value at 64.07, including a mean valued at 62.46, an increasing trend from 6.6 to 15.0 seconds, an increasing trend from 19.7 to 24.4 seconds, along with an decreasing phase from 27.2 to 30.0 seconds. Blood Oxygen Saturation: minimum value of 95.31, mean of 97.04, along with a increasing movement from 0.9 to 23.4 seconds.",
+      "respiratory": "Abdominal Respiration: respiratory rate valued at 13.29 bpm. Thoracic Respiration: respiratory rate of 14.71 bpm, along with a breath interval variability equal to 0.25 s. Air Flow: a airflow rate valued at 14.64 bpm, plus a inspiratory flow flatness of 0.71.",
+      "position_muscle": "Chin EMG Activity: a median frequency of 17.34 Hz, including a burst intensity ratio measuring 1.91, together with burst modulation rate at 0.98 Hz. The patient maintains the left position for this period."
+    }
+  },
+  {
+    "sample_idx": 4,
+    "gt": {
+      "stage_event": "Sleep stage evaluation reveals Stable Light Sleep (N2) for this epoch. No sleep-disordered breathing events were detected.",
+      "brain": "Left EOG Movement: a slow eye movement relative power valued at 20.58%, and also a REM saccadic relative power equal to 53.69%. Right EOG Movement: slow eye movement relative power measuring 14.98%, as well as a REM saccadic relative power of close to 53%. Central EEG Activity (C3-A2): delta relative power measuring 65.16%, combined with a theta relative power measuring 18.50%, alpha relative power valued at close to 10%, and a beta relative power valued at 3.35%. Central EEG Activity (C4-A1): a delta relative power equal to 61.56%, accompanied by theta relative power valued at 19.53%, plus alpha relative power valued at 10.99%, plus a beta relative power at 4.19%.",
+      "heart": "Electrocardiogram: estimated beat rate at 63.6 bpm, along with a ultra-short HRV (RMSSD) at 24.41 ms. Heart Rate: a minimum value at 63.28, combined with a maximum value valued at 66.29, along with a mean of 64.03, including an decreasing phase from 0.9 to 7.5 seconds, combined with an stable behavior from 10.3 to 18.8 seconds, a decreasing movement from 19.7 to 24.4 seconds. Blood Oxygen Saturation: minimum value measuring 96.09, combined with a mean measuring 96.56, an decreasing behavior from 0.9 to 15.0 seconds, a increasing interval from 19.7 to 30.0 seconds.",
+      "respiratory": "Abdominal Respiration: a respiratory rate valued at 13.29 bpm. Thoracic Respiration: a respiratory rate equal to 14.88 bpm, and finally breath interval variability valued at 0.28 s. Air Flow: a airflow rate equal to 14.94 bpm, accompanied by a inspiratory flow flatness of 0.56.",
+      "position_muscle": "Chin EMG Activity: median frequency valued at 15.00 Hz, accompanied by a burst intensity ratio equal to 2.42, along with burst modulation rate valued at 0.87 Hz. The patient maintains a left position for the entire period."
+    }
+  },
+  {
+    "sample_idx": 8,
+    "gt": {
+      "stage_event": "A REM Sleep phase is detected in this epoch. The Hypopnea event is documented from 0.0 to 5.6 seconds. The Oxygen Desaturation event lasts from 14.2 to 30.0 seconds. The Hypopnea event is present from 15.4 to 30.0 seconds.",
+      "brain": "Left EOG Movement: slow eye movement relative power valued at 30.75%, plus REM saccadic relative power at 52.64%. Right EOG Movement: slow eye movement relative power measuring roughly 39%, and also a REM saccadic relative power of close to 44%. Central EEG Activity (C3-A2): delta relative power measuring 71.80%, accompanied by theta relative power of close to 16%, along with a alpha relative power of approximately 6%, and lastly a beta relative power equal to approximately 3%. Central EEG Activity (C4-A1): delta relative power measuring 72.35%, in addition to a theta relative power measuring 15.68%, accompanied by alpha relative power at 6.03%, and finally beta relative power valued at 3.03%.",
+      "heart": "Electrocardiogram: a estimated beat rate measuring 56.1 bpm, a ultra-short HRV (RMSSD) valued at 33.53 ms. Heart Rate: a minimum value valued at 55.47, along with maximum value equal to approximately 57, mean of roughly 56, in addition to an increasing behavior from 2.8 to 7.5 seconds, in addition to a decreasing interval from 8.4 to 11.3 seconds, including a increasing progression from 12.2 to 13.1 seconds, as well as an decreasing segment from 14.1 to 15.0 seconds, combined with a increasing pattern from 15.0 to 15.9 seconds, including a decreasing pattern from 15.9 to 20.6 seconds, as well as an decreasing tendency from 23.4 to 28.1 seconds. Blood Oxygen Saturation: minimum value equal to 96.09, in addition to mean measuring 97.09, and an decreasing tendency from 5.6 to 23.4 seconds.",
+      "respiratory": "Abdominal Respiration: a respiratory rate at 13.29 bpm. Thoracic Respiration: respiratory rate valued at 14.25 bpm, as well as breath interval variability at 0.57 s. Air Flow: airflow rate of 14.74 bpm, a inspiratory flow flatness of 0.59.",
+      "position_muscle": "Chin EMG Activity: median frequency equal to 14.89 Hz, plus a burst intensity ratio measuring 2.46, along with a burst modulation rate equal to 0.75 Hz. The patient remains lying prone throughout this epoch."
+    }
+  },
+  {
+    "sample_idx": 19,
+    "gt": {
+      "stage_event": "The patient presents REM Sleep during this period. The recording showed no significant sleep-related events.",
+      "brain": "Left EOG Movement: slow eye movement relative power of approximately 29%, and also a REM saccadic relative power equal to 42.85%. Right EOG Movement: a slow eye movement relative power valued at 23.12%, and lastly REM saccadic relative power at 48.36%. Central EEG Activity (C3-A2): delta relative power equal to 53.48%, as well as theta relative power of 22.68%, a alpha relative power equal to 13.26%, a beta relative power of 6.66%. Central EEG Activity (C4-A1): delta relative power measuring 44.15%, as well as theta relative power measuring approximately 26%, alpha relative power valued at 15.84%, along with beta relative power equal to 9.69%.",
+      "heart": "Electrocardiogram: estimated beat rate measuring 67.1 bpm, plus ultra-short HRV (RMSSD) valued at 119.04 ms. Heart Rate: a minimum value at 63.28, as well as a maximum value at approximately 72, together with mean equal to close to 67, an increasing phase from 0.9 to 5.6 seconds, along with an decreasing tendency from 4.7 to 9.4 seconds, accompanied by an increasing segment from 10.3 to 16.9 seconds, as well as an decreasing behavior from 17.8 to 26.3 seconds, in addition to a increasing period from 27.2 to 30.0 seconds. Blood Oxygen Saturation: a minimum value valued at 93.36, accompanied by a mean measuring around 94, a increasing pattern from 0.9 to 9.4 seconds, together with a decreasing progression from 4.7 to 18.8 seconds, plus an increasing segment from 19.7 to 28.1 seconds.",
+      "respiratory": "Abdominal Respiration: respiratory rate equal to 16.84 bpm, plus a breath interval variability at 0.70 s. Thoracic Respiration: a respiratory rate equal to 15.30 bpm, along with breath interval variability measuring 1.55 s. Air Flow: airflow rate of 17.96 bpm, along with inspiratory flow flatness at 0.54.",
+      "position_muscle": "Chin EMG Activity: a median frequency of 19.57 Hz, as well as burst intensity ratio valued at 4.31, and burst modulation rate equal to 0.42 Hz. The patient stays in the prone position during this epoch."
+    }
+  }
+]
