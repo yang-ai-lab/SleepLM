@@ -10,7 +10,7 @@ This repository provides an interface for SleepLM, capable of:
 
 1. **Targeted Caption Generation**: Generate free-text descriptions of 30-second sleep epochs by conditioning on specific modality tokens.
 2. **Signal–Text Retrieval**: Encode both biosignals and text into a shared embedding space and compute cosine similarity for retrieval tasks.
-3. **Checkpoint**: We provide the checkpoint for SleepLM-Base in `model_checkpoint.pt`
+3. **Checkpoint**: Please download the checkpoint from [https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing](https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing).
 
 ---
 
@@ -34,6 +34,8 @@ pip install -r requirements.txt
 
 ### Basic Usage
 
+Download the model checkpoint from [https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing](https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing).
+
 Launch `demo.ipynb` for an interactive, visual demonstration.
 
 The notebook includes:
@@ -54,10 +56,10 @@ The model expects signals in the following order:
 | 1 | ABD | Abdominal respiratory effort |
 | 2 | THX | Thoracic respiratory effort |
 | 3 | AF | Airflow |
-| 4 | EOG_E1 | Left eye movement |
-| 5 | EOG_E2 | Right eye movement |
-| 6 | EEG_C3 | Left central EEG |
-| 7 | EEG_C4 | Right central EEG |
+| 4 | EOG_Left | Left eye movement |
+| 5 | EOG_Right | Right eye movement |
+| 6 | EEG_C3_A2 | Left central EEG |
+| 7 | EEG_C4_A1 | Right central EEG |
 | 8 | EMG_Chin | Chin muscle tone |
 | 9 | POS | Body position |
 
