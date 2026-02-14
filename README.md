@@ -1,5 +1,6 @@
 # SleepLM
 [![Paper](https://img.shields.io/badge/paper-arXiv-blue)](#citation)
+[![Webpage](https://yang-ai-lab.github.io/SleepLM_website/#)](https://yang-ai-lab.github.io/SleepLM_website/#)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
 
@@ -32,7 +33,7 @@ pip install -r requirements.txt
 Download the model checkpoint here:  
 - Google Drive: https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing
 
-Place the checkpoint in the expected location used by `demo.ipynb` (see notebook cell that loads weights).
+Place the checkpoint in the expected location used by `demo.ipynb`.
 
 ### 3) Run the demo
 
