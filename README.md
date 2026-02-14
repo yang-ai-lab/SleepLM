@@ -1,5 +1,4 @@
-# SleepLM — Sleep Language Model (Inference Demo)
-
+# SleepLM
 [![Paper](https://img.shields.io/badge/paper-arXiv-blue)](#citation)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
