@@ -1,6 +1,6 @@
 # SleepLM
-[![Paper](https://img.shields.io/badge/paper-arXiv-blue)](#citation)
-[![Webpage](https://img.shields.io/badge/website-demo-brightgreen)](https://yang-ai-lab.github.io/SleepLM_website/#)
+[![Paper](https://img.shields.io/badge/paper-arXiv-red)](#citation)
+[![Webpage](https://img.shields.io/badge/website-demo-blue)](https://yang-ai-lab.github.io/SleepLM_website/#)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
 
