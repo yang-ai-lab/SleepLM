@@ -13,7 +13,7 @@ SleepLM supports controllable, domain-specific generation (brain, cardiac, respi
 ## ✨ What you can do with this repo
 
 - **Targeted caption generation** for 30-second sleep epochs using modality tokens (brain / cardiac / respiration / somatic).
-- **Signal–text retrieval** by encoding signals and text into a shared embedding space and computing cosine similarity.
+- **Cross modal retrieval** by encoding signals and text into a shared embedding space and computing cosine similarity.
 - Run an interactive demo in **`demo.ipynb`**.
 
 ---
@@ -42,7 +42,7 @@ Open and run:
 - `demo.ipynb`
 
 The notebook includes:
-- signal to text similarity calculations
+- similarity calculation between signal and text embeddings
 - targeted caption generation with per-modality conditioning
 
 ---
@@ -109,7 +109,7 @@ This repo is intentionally lightweight and focuses on **inference**. If you plan
 - train on NSRR cohorts,
 - or evaluate cross-cohort generalization,
 
-We are planning to opensource it upon the acceptance of the paper
+We are planning to opensource our training pipeline & data pipeline upon the acceptance of the paper
 
 ---
 
