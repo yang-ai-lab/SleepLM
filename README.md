@@ -2,12 +2,11 @@
 
 [![Paper](https://img.shields.io/badge/paper-arXiv-blue)](#citation)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
-[![Python](https://img.shields.io/badge/python-3.8%2B-brightgreen)](#installation)
+[![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
 
-SleepLM is a **sleep–language foundation model** that maps **multimodal polysomnography (PSG)** to natural language.  
-This repository is an **inference-focused demo** for (1) **targeted caption generation** and (2) **signal↔text retrieval** using a shared embedding space.
+SleepLM is, to our knowledge, the first sleep-language foundation model family that enables targeted natural language generation from multimodal polysomnography (PSG) while also learning a shared signal–text embedding space for retrieval and open vocabulary sleep understanding. It is trained on the largest paired sleep–text corpus to date, built from five NSRR cohorts totaling 100K+ hours of PSG from 10,000+ individuals.
 
-> **Research-only.** SleepLM is **not** clinically validated and must not be used for diagnosis or medical decision-making.
+SleepLM supports controllable, domain-specific generation (brain, cardiac, respiration, somatic) as well as holistic summaries, moving beyond fixed label spaces like sleep stages and events. The model combines contrastive alignment, captioning, and signal reconstruction to preserve physiological fidelity while learning strong cross-modal semantics. Across a broad benchmark, SleepLM enables sleep-text retrieval, zero-shot and few-shot generalization, and robust transfer to unseen concepts.
 
 ---
 
@@ -15,11 +14,11 @@ This repository is an **inference-focused demo** for (1) **targeted caption gene
 
 - **Targeted caption generation** for 30-second sleep epochs using modality tokens (brain / cardiac / respiration / somatic).
 - **Signal–text retrieval** by encoding signals and text into a shared embedding space and computing cosine similarity.
-- Run an interactive demo in **`demo.ipynb`** (recommended).
+- Run an interactive demo in **`demo.ipynb`**.
 
 ---
 
-## 🚀 Quickstart (5 minutes)
+## 🚀 Quickstart
 
 ### 1) Install
 
@@ -28,11 +27,6 @@ git clone https://github.com/yang-ai-lab/sleep_language_DEMO.git
 cd sleep_language_DEMO
 pip install -r requirements.txt
 ```
-
-**Requirements**
-- Python ≥ 3.8
-- PyTorch ≥ 2.0
-- A CUDA-capable GPU is recommended for smooth inference (CPU may work but will be slower)
 
 ### 2) Download checkpoint
 
@@ -48,7 +42,7 @@ Open and run:
 - `demo.ipynb`
 
 The notebook includes:
-- signal↔text similarity calculations
+- signal to text similarity calculations
 - targeted caption generation with per-modality conditioning
 
 ---
@@ -101,50 +95,21 @@ You can generate captions for your own sleep recordings by placing **preprocesse
 
 **Signal requirements**
 - Resample to **64 Hz**
-- Normalize each channel (**z-score** recommended)
-- If a channel is missing, **zero-pad** it (e.g., no airflow → channel 3 all zeros)
+- Normalize each channel (**z-score**)
+- If a channel is missing, **zero-pad** it
 - POS must follow the integer encoding above
 - Each epoch must be exactly **30 seconds** (**1920 samples @ 64 Hz**)
 
 ---
 
-## 🔁 Reproducibility notes (inference demo)
+## 🔁 Reproducibility notes
 
 This repo is intentionally lightweight and focuses on **inference**. If you plan to:
 - reproduce paper benchmarks,
 - train on NSRR cohorts,
 - or evaluate cross-cohort generalization,
 
-consider adding (or linking to) a separate training/eval codebase with:
-- dataset loaders + subject-level splits
-- configs matching the paper
-- scripts to run each benchmark and produce tables/figures
-
-(If you maintain that code elsewhere, link it prominently here.)
-
----
-
-## ⚠️ Limitations & responsible use
-
-- **Not a medical device**: do not use for clinical diagnosis, triage, or treatment decisions.
-- Outputs can be **wrong, incomplete, or misleading**, especially under domain shift (sensor montage differences, noise/artifacts, missing channels).
-- Use human oversight and validate on your own data distribution.
-
----
-
-## 🛠️ Contributing
-
-Contributions are welcome (bugs, docs, examples, usability improvements).
-
-Suggested workflow:
-1. Fork the repo and create a feature branch
-2. Make changes + update README/examples if needed
-3. Open a PR with a short description and screenshots/logs when relevant
-
-If you plan to open-source broadly, consider adding:
-- a code style tool (ruff/black) + minimal CI
-- issue templates (bug report / feature request)
-- a roadmap section (next features/checkpoints)
+We are planning to opensource it upon the acceptance of the paper
 
 ---
 
