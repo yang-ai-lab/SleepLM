@@ -51,7 +51,6 @@ The notebook includes:
 
 - `demo.ipynb` — interactive inference + visualization
 - `requirements.txt` — dependencies
-- `examples/` — example preprocessed epochs (see “Using your own signals” below)
 
 ---
 
@@ -91,7 +90,7 @@ POSITION_ENCODING = {
 
 ## 🧪 Using your own signals
 
-You can generate captions for your own sleep recordings by placing **preprocessed** epochs in `examples/` and pointing the notebook to them.
+You can generate captions for your own sleep recordings by loading **preprocessed** epochs directly in `demo.ipynb`.
 
 **Signal requirements**
 - Resample to **64 Hz**
@@ -99,6 +98,7 @@ You can generate captions for your own sleep recordings by placing **preprocesse
 - If a channel is missing, **zero-pad** it
 - POS must follow the integer encoding above
 - Each epoch must be exactly **30 seconds** (**1920 samples @ 64 Hz**)
+- Pack epochs into a float32 PyTorch tensor of shape `[N, 10, 1920]`
 
 ---
 
@@ -109,7 +109,7 @@ This repo is intentionally lightweight and focuses on **inference**. If you plan
 - train on NSRR cohorts,
 - or evaluate cross-cohort generalization,
 
-We are planning to opensource our training pipeline & data pipeline upon the acceptance of the paper
+We are planning to open-source our training pipeline upon the acceptance of the paper. Note that the training data will not be open-sourced.
 
 ---
 
