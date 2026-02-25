@@ -1,7 +1,7 @@
 # SleepLM: Natural-Language Intelligence for Human Sleep
 [![Paper](https://img.shields.io/badge/paper-arXiv-red)](#citation)
 [![Webpage](https://img.shields.io/badge/website-demo-blue)](https://yang-ai-lab.github.io/SleepLM_website/#)
-[![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
 
 SleepLM is, to our knowledge, the first sleep-language foundation model family that enables targeted natural language generation from multimodal polysomnography (PSG) while also learning a shared signal–text embedding space for retrieval and open vocabulary sleep understanding. It is trained on the largest paired sleep–text corpus to date, built from five NSRR cohorts totaling 100K+ hours of PSG from 10,000+ individuals.
@@ -132,6 +132,12 @@ If you use SleepLM in your research, please cite the paper:
   year={2026}
 }
 ```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
