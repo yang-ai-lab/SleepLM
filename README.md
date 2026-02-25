@@ -122,7 +122,8 @@ This repo is intentionally lightweight and focuses on **inference**. If you plan
 - train on NSRR cohorts,
 - or evaluate cross-cohort generalization,
 
-We are planning to open-source our training pipeline upon the acceptance of the paper. Note that the training data will not be open-sourced.
+We are planning to opensource our training pipeline upon the acceptance of the paper. 
+Note that the training data will not be opensourced due credential issue. If you wish to use the same NSRR datasets, [please apply here](https://sleepdata.org/).
 
 ---
 
