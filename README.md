@@ -35,7 +35,14 @@ Download the model checkpoint here:
 
 Place the checkpoint in the expected location used by `demo.ipynb`.
 
-### 3) Run the demo
+### 3) Prepare your data
+
+Preprocess your PSG recordings into a float32 PyTorch tensor of shape `[N, 10, 1920]`
+(N epochs × 10 channels × 1920 samples) following the channel order and signal requirements
+in [Using your own signals](#-using-your-own-signals) below.
+Save it as a `.pt` file and update the path in `demo.ipynb`.
+
+### 4) Run the demo
 
 Open and run:
 
