@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SleepLM: Natural-Language Intelligence for Human Sleep.">
+  <meta name="keywords" content="SleepLM, Sleep, LLM, Multimodal, Healthcare">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SleepLM: Natural-Language Intelligence for Human Sleep</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=8">
+  <link rel="icon" href="./static/images/sleeplm_favicon.svg">
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" data-tab="home"><span>Sleep Language Foundation Models</span></a>
+    <button class="nav-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#" class="active" data-tab="home">Home</a></li>
+      <li><a href="#" data-tab="architecture">Architecture</a></li>
+      <li><a href="#" data-tab="results">Results</a></li>
+      <li><a href="#" data-tab="citation">Cite</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="dropdown-trigger">More Work <i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://yang-ai-lab.github.io/osf" target="_blank">OSF: On Pre-training and Scaling of Sleep Foundation Models</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Tab: Home ===== -->
+<div id="tab-home" class="tab-panel active">
+
+  <section class="hero-section">
+    <div class="section-inner">
+      <div class="hero-title">
+        <h1>SleepLM: Natural-Language Intelligence for Human Sleep</h1>
+        <div class="authors">
+          <span class="author-block"><a href="https://scholar.google.com/citations?user=N9qRCIIAAAAJ&hl=en">Zongzhe Xu</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://zitao-shuai.github.io/">Zitao Shuai</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://www.linkedin.com/in/eideenmozaffari/">Eideen Mozaffari</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://profiles.ucla.edu/ravi.aysola">Ravi Shankar Aysola</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://bri.ucla.edu/people/rajesh-kumar/">Rajesh Kumar</a><sup>1</sup>,</span>
+          <span class="author-block"><a href="https://web.cs.ucla.edu/~yuzhe/">Yuzhe Yang</a><sup>1</sup></span>
+        </div>
+        <div class="affiliation"><sup>1</sup>University of California, Los Angeles</div>
+
+        <div class="link-buttons">
+          <a href="#" class="btn-disabled">
+            <span class="icon"><i class="ai ai-arxiv"></i></span>
+            arXiv (Coming Soon)
+          </a>
+          <a href="https://github.com/yang-ai-lab/SleepLM">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            Code
+          </a>
+          <a href="#" class="btn-disabled">
+            <span class="icon"><i class="far fa-images"></i></span>
+            Data (Coming Soon)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <div class="teaser-block">
+        <img src="./static/videos/teaser.gif" alt="SleepLM Teaser">
+        <p class="teaser-caption">
+          SleepLM is a family of foundation models that bridge natural language and multimodal polysomnography, enabling language-grounded representations of sleep physiology.
+        </p>
+      </div>
+
+      <div class="section-header">
+        <h2><i class="fas fa-bullhorn" style="font-size: 0.85em; margin-right: 0.4rem; color: #a78bfa;"></i>News</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2026-02-23</span>
+          <span class="news-text">Project website is live!</span>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2026-02-23</span>
+          <span class="news-text">Code released on <a href="https://github.com/yang-ai-lab/SleepLM">GitHub</a>.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Abstract</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          We present <strong>SleepLM</strong>, a family of sleep-language foundation models that enable human sleep alignment,
+          interpretation, and interaction with natural language. Despite the critical role of sleep, learning-based
+          sleep analysis systems operate in closed label spaces (e.g., predefined stages or events) and fail to
+          describe, query, or generalize to novel sleep phenomena.
+        </p>
+        <p>
+          SleepLM bridges natural language and multimodal polysomnography, enabling language-grounded representations of sleep physiology. To
+          support this alignment, we introduce a multilevel sleep caption generation pipeline that enables the
+          curation of the <strong>first</strong> large-scale sleep-text dataset, comprising over 100K hours of data from more
+          than 10,000 individuals. Furthermore, we present a unified pretraining objective that combines
+          contrastive alignment, caption generation, and signal reconstruction to better capture physiological
+          fidelity and cross-modal interactions.
+        </p>
+        <p>
+          Extensive experiments on real-world sleep understanding tasks
+          verify that SleepLM outperforms state-of-the-art in zero-shot and few-shot learning, cross-modal
+          retrieval, and sleep captioning. Importantly, SleepLM also exhibits intriguing capabilities including
+          language-guided event localization, targeted insight generation, and zero-shot generalization to
+          unseen tasks.
+        </p>
+      </div>
+
+      <div class="section-header">
+        <h2>Motivation</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          Humans move between two distinct states: the waking life, structured by perception and language; and sleep, expressed through dense and continuous physiology.
+          Making sense of sleep requires a mapping from physiology to language.
+        </p>
+        <p>
+          Current computational methods are predominantly discriminative and confined to closed label spaces (e.g., sleep stages or events).
+          They lack the capacity for open-ended description. SleepLM aims to bridge this gap by learning a mapping between PSG and language at scale, enabling interactive and open-ended sleep analysis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+</div>
+
+<!-- ===== Tab: Architecture ===== -->
+<div id="tab-architecture" class="tab-panel">
+
+  <section class="content-section first-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Model Architecture: ReCoCa</h2>
+      </div>
+
+      <figure class="figure-block arch-top-figure">
+        <video autoplay loop muted playsinline>
+          <source src="./static/videos/figure 5 animation.mp4" type="video/mp4">
+        </video>
+        <figcaption>The ReCoCa Architecture</figcaption>
+      </figure>
+
+      <div class="content-card">
+        <p>
+          SleepLM is built on the <strong>Reconstructive Contrastive Captioner (ReCoCa)</strong> framework, designed to learn joint representations of sleep PSG and text.
+          The architecture consists of three key components:
+        </p>
+      </div>
+
+      <div class="arch-components">
+        <div class="arch-item">
+          <h4>Channel-Specific Sleep Encoder</h4>
+          <p>
+            Captures the unique morphology of different sensor channels (EEG, EOG, etc.) using channel-independent patch embedding followed by interleaved temporal-attention and channel-attention blocks.
+          </p>
+        </div>
+        <div class="arch-item">
+          <h4>Signal Reconstruction Decoder</h4>
+          <p>
+            A lightweight decoder that reconstructs the original signal from encoder latents. This acts as a regularizer, ensuring the model retains physiological fidelity that might be lost if only training on sparse text alignment.
+          </p>
+        </div>
+        <div class="arch-item">
+          <h4>Modality-Conditioned Text Decoder</h4>
+          <p>
+            Generates targeted captions using cross attention between the encoder latents and the text token embeddings. It uses a learnable token <code>[m]</code> to condition generation on specific physiological systems (Brain, Respiratory, Cardiac, Somatic), enabling controllable output.
+          </p>
+        </div>
+      </div>
+
+      <div class="objective-eq">
+        <code>L_total = &lambda;_con &middot; L_con + &lambda;_rec &middot; L_rec + &lambda;_cap &middot; L_cap</code>
+        <p>Combining contrastive alignment, signal reconstruction, and caption generation.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== Tab: Results ===== -->
+<div id="tab-results" class="tab-panel">
+
+  <section class="content-section first-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>Results</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          SleepLM is evaluated on four complementary axes of sleep understanding and generalization. It outperforms a comprehensive set of baseline models including proprietary LLMs (Gemini 2.5 Pro, DeepSeek-R1) and finetuned VLMs (Qwen3-VL-8B, LLaVA-Next).
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <div class="result-item">
+          <h4>Zero-shot Classification</h4>
+          <p>Strong performance without task-specific finetuning, demonstrating that the learned signal and text alignment transfers to standard sleep staging and event-related recognition settings.</p>
+        </div>
+        <div class="result-item">
+          <h4>Cross-modal Retrieval</h4>
+          <p>Supports both text-to-signal and signal-to-text retrieval, enabling natural language search over PSG segments and interpretation of retrieved physiology with matched captions.</p>
+        </div>
+        <div class="result-item">
+          <h4>Few-shot Learning</h4>
+          <p>Achieves high data efficiency in low-label regimes, where simple linear probes on top of pretrained representations perform competitively with state-of-the-art SSL baselines.</p>
+        </div>
+        <div class="result-item">
+          <h4>Generalization to Unseen Concepts</h4>
+          <p>Remains robust when evaluating on held-out concepts and datasets, indicating that the model captures reusable physiological semantics rather than memorizing a closed label set.</p>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="section-header">
+        <h2>Qualitative Insights</h2>
+      </div>
+      <div class="content-card">
+        <p>
+          We select two qualitative views that make it easier to understand what the model learns and
+          where its strengths come from. In the paper, we also demonstrate other intriguing capabilities of SleepLM including precise targeted generation,
+          localization sensitivity to event segmentation, scaling behavior, full night index aggregation, etc.
+        </p>
+        <p>
+          <strong>Caption generation quality:</strong> SleepLM produces clinically consistent descriptions that reflect both high-level sleep state
+          and fine-grained localized events, while a strong general-purpose LLM baseline may introduce incorrect
+          associations or miss event localization tied to the underlying signal physiology.
+        </p>
+        <p>
+          <strong>Embedding-space continuity:</strong> For a fixed PSG query, retrieved captions
+          form a smooth semantic gradient in the embedding space. The most similar results describe physiologically matching states, and progressively less similar
+          results shift toward increasingly different states. This supports the view that embedding distance correlates with physiological similarity,
+          enabling meaningful comparison by semantic proximity.
+        </p>
+      </div>
+
+      <figure class="figure-block">
+        <img src="./static/images/generation_quality.png" alt="Caption generation quality">
+        <figcaption>Caption generation quality</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <img src="./static/images/retrieval_qualitative.png" alt="Embedding space continuity">
+        <figcaption>Embedding-space continuity</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== Tab: Citation ===== -->
+<div id="tab-citation" class="tab-panel">
+
+  <section class="content-section first-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <h2>BibTeX</h2>
+      </div>
+      <pre class="bibtex-block"><code>@article{xu2026sleeplm,
+  title={SleepLM: Natural-Language Intelligence for Human Sleep},
+  author={Xu, Zongzhe and Shuai, Zitao and Mozaffari, Eideen and Aysola, Ravi Shankar and Kumar, Rajesh and Yang, Yuzhe},
+  journal={arXiv preprint},
+  year={2026}
+}</code></pre>
+    </div>
+  </section>
+
+</div>
+
+<!-- ===== Footer (always visible) ===== -->
+<footer class="site-footer">
+  <div class="footer-icons">
+    <a href="https://github.com/yang-ai-lab/SleepLM" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </div>
+  <p>Template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.</p>
+</footer>
+
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="./static/js/index.js?v=2"></script>
+</body>
+</html>
