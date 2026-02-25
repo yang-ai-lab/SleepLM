@@ -1,4 +1,4 @@
-# SleepLM
+# SleepLM: Natural-Language Intelligence for Human Sleep
 [![Paper](https://img.shields.io/badge/paper-arXiv-red)](#citation)
 [![Webpage](https://img.shields.io/badge/website-demo-blue)](https://yang-ai-lab.github.io/SleepLM_website/#)
 [![License](https://img.shields.io/badge/license-TBD-lightgrey)](#license)
