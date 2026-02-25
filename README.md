@@ -125,20 +125,13 @@ We are planning to open-source our training pipeline upon the acceptance of the 
 If you use SleepLM in your research, please cite the paper:
 
 ```bibtex
-@article{sleeplm2024,
-  title   = {SleepLM: Natural Language Generation and Retrieval from Sleep Physiology Signals},
-  author  = {TBD},
-  journal = {arXiv preprint arXiv:TBD},
-  year    = {2024}
+@article{xu2026sleeplm,
+  title={SleepLM: Natural-Language Intelligence for Human Sleep},
+  author={Xu, Zongzhe and Shuai, Zitao and Mozaffari, Eideen and Aysola, Ravi Shankar and Kumar, Rajesh and Yang, Yuzhe},
+  journal={arXiv preprint},
+  year={2026}
 }
 ```
-
----
-
-## 📄 License
-
-**TBD.**  
-If you intend to be open-source, pick a license explicitly (e.g., **Apache-2.0** or **MIT**) and add a `LICENSE` file.
 
 ---
 
