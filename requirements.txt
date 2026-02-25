@@ -1,5 +1,0 @@
-torch>=2.0
-transformers
-ftfy
-regex
-numpy
