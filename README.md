@@ -29,8 +29,8 @@ SleepLM supports controllable, domain-specific generation (brain, cardiac, respi
 ### 1) Install
 
 ```bash
-git clone https://github.com/yang-ai-lab/sleep_language_DEMO.git
-cd sleep_language_DEMO
+git clone https://github.com/yang-ai-lab/SleepLM
+cd SleepLM
 pip install -r requirements.txt
 ```
 
