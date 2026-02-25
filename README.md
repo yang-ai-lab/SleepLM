@@ -4,13 +4,15 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
 
-## 📰 News
-- **[2026-02-23]** Code released on GitHub!
-- **[2026-02-23]** Project website is live!
-
 SleepLM is, to our knowledge, the first sleep-language foundation model family that enables targeted natural language generation from multimodal polysomnography (PSG) while also learning a shared signal–text embedding space for retrieval and open vocabulary sleep understanding. It is trained on the largest paired sleep–text corpus to date, built from five NSRR cohorts totaling 100K+ hours of PSG from 10,000+ individuals.
 
 SleepLM supports controllable, domain-specific generation (brain, cardiac, respiration, somatic) as well as holistic summaries, moving beyond fixed label spaces like sleep stages and events. The model combines contrastive alignment, captioning, and signal reconstruction to preserve physiological fidelity while learning strong cross-modal semantics. Across a broad benchmark, SleepLM enables sleep-text retrieval, zero-shot and few-shot generalization, and robust transfer to unseen concepts.
+
+---
+
+## 📰 News
+- **[2026-02-23]** Code released on GitHub!
+- **[2026-02-23]** Project website is live!
 
 ---
 
