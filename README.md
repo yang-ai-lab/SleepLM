@@ -1,8 +1,9 @@
 # SleepLM: Natural-Language Intelligence for Human Sleep
 [![Paper](https://img.shields.io/badge/paper-arXiv-red)](#citation)
 [![Webpage](https://img.shields.io/badge/website-demo-blue)](https://yang-ai-lab.github.io/SleepLM/)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-SleepLM--Base-FFD21E)](https://huggingface.co/yang-ai-lab/SleepLM-Base)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)](#installation)
+
 
 SleepLM is, to our knowledge, the first sleep-language foundation model family that enables targeted natural language generation from multimodal polysomnography (PSG) while also learning a shared signal–text embedding space for retrieval and open vocabulary sleep understanding. It is trained on the largest paired sleep–text corpus to date, built from five NSRR cohorts totaling 100K+ hours of PSG from 10,000+ individuals.
 
@@ -36,10 +37,17 @@ pip install -r requirements.txt
 
 ### 2) Download checkpoint
 
-Download the model checkpoint here:  
-- Google Drive: https://drive.google.com/drive/folders/1G-kECgRcXr9bJhsahnh6RWmzRGK7Rvme?usp=sharing
+The model checkpoint is hosted on Hugging Face Hub:
 
-Place the checkpoint in the expected location used by `demo.ipynb`.
+```python
+from huggingface_hub import hf_hub_download
+checkpoint_path = hf_hub_download(repo_id="yang-ai-lab/SleepLM-Base", filename="model_checkpoint.pt")
+```
+
+Or via the CLI:
+```bash
+huggingface-cli download yang-ai-lab/SleepLM-Base model_checkpoint.pt
+```
 
 ### 3) Prepare your data
 
