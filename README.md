@@ -143,7 +143,7 @@ If you use SleepLM in your research, please cite the paper:
 ```bibtex
 @article{xu2026sleeplm,
   title={SleepLM: Natural-Language Intelligence for Human Sleep},
-  author={Xu, Zongzhe and Shuai, Zitao and Mozaffari, Eideen and Aysola, Ravi Shankar and Kumar, Rajesh and Yang, Yuzhe},
+  author={Xu, Zongzhe and Shuai, Zitao and Mozaffari, Eideen and Aysola, Ravi S and Kumar, Rajesh and Yang, Yuzhe},
   journal={arXiv preprint arXiv:2602.23605},
   year={2026}
 }
