@@ -12,6 +12,7 @@ SleepLM supports controllable, domain-specific generation (brain, cardiac, respi
 ---
 
 ## 📰 News
+- **[2026-04-30]** SleepLM has been accepted to [ICML 2026](https://icml.cc/Conferences/2026) as a **Spotlight** paper!
 - **[2026-03-02]** Paper released on [arXiv](https://arxiv.org/abs/2602.23605)!
 - **[2026-02-23]** Code released on GitHub, and model released on [HuggingFace](https://huggingface.co/yang-ai-lab/SleepLM-Base)!
 - **[2026-02-23]** [Project website](https://yang-ai-lab.github.io/SleepLM/) is live!
